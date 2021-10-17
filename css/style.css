@@ -6,3 +6,37 @@
     --placeholder-text-color: #A5A5A5;
     --date-text-color: #585858;
 }
+
+body {
+    font-family: Roboto, sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu {
+    display: flex;
+}
+
+.work {
+    display: flex;
+}
+
+.contacts {
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-name {
+    display: block;
+}
+
