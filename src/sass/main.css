@@ -3,6 +3,117 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  padding: 20px 60px;
+  color: #FFFFFF;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 250ms linear;
+  transition: -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
+}
+
 :root {
   --primary-text-color: #000000;
   --second-text-color: #FFFFFF;
@@ -10,5 +121,87 @@
   --fourth-text-color: #808080;
   --placeholder-text-color: #A5A5A5;
   --date-text-color: #585858;
+  --button-color: #00BB34;
+}
+
+.hero {
+  position: relative;
+  padding: 190px 0  460px 0;
+  background-image: url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-items {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 63px;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.nav-item {
+  padding: 30px 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 65px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 2px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(----primary-text-color);
+}
+
+.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  border: 1px solid #000000;
+  opacity: 0;
+}
+
+.nav-link.current::after {
+  opacity: 1;
+}
+
+.hero-title {
+  width: 520px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 1.18;
+  color: var(--second-text-color);
+}
+
+.hero-items {
+  margin-bottom: 40px;
+}
+
+.hero-list {
+  list-style: disc;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--second-text-color);
+}
+
+.hero-button:focus,
+.hero-button:hover {
+  -webkit-box-shadow: 2px 8px 30px #00BB34;
+          box-shadow: 2px 8px 30px #00BB34;
 }
 /*# sourceMappingURL=main.css.map */
