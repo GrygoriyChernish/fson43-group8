@@ -4,7 +4,16 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './base/variables';
+//BASE
+@import './base/base-styles';
+
+// COMPONENTS
+@import './components/container';
+@import './components/button';
+
+// UTILS
+@import './utils/variables';
+
 @import './header';
 @import './hero';
 @import './features';
