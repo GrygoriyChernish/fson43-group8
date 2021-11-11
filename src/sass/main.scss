@@ -6,13 +6,12 @@
 // Стили для файла с примером HTML-фрагмента
 //BASE
 @import './base/base-styles';
+// UTILS
+@import './utils/variables';
 
 // COMPONENTS
 @import './components/container';
 @import './components/button';
-
-// UTILS
-@import './utils/variables';
 
 @import './header';
 @import './hero';

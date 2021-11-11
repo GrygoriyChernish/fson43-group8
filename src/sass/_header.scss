@@ -1,0 +1,69 @@
+.header {
+  background: linear-gradient(90deg, #443682 14.58%, #28418a 39.75%, #00669c 68.41%);
+}
+
+.header-logo {
+  width: 90px;
+  height: 90px;
+
+  margin-right: 24px;
+}
+
+.header-logo-link {
+  width: 330px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-text {
+  color: #ffffff;
+  width: 216px;
+
+  margin-right: 57px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-social-list {
+  display: flex;
+}
+.header-social-list-item {
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+.work-time-list {
+  display: flex;
+}
+.work-time-item {
+  display: flex;
+  align-items: center;
+}
+.work-time-title {
+}
+.work-time-clock {
+  width: 163px;
+}
+.header-tell-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header-call-list {
+  display: flex;
+  align-items: center;
+}
+.header-call-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-contact-link {
+  display: flex;
+  align-items: center;
+}
+.header-tell-icon {
+}
