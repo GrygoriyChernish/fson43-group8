@@ -10,9 +10,11 @@
 }
 
 .header-logo-link {
+  position: absolute;
   width: 330px;
   display: flex;
   align-items: center;
+  left: -146px;
 }
 
 .header-logo-text {
@@ -23,17 +25,37 @@
 }
 
 .header-container {
+  position: relative;
+  height: 150px;
   display: flex;
   align-items: center;
 }
 .header-social-list {
   display: flex;
 }
-.header-social-list-item {
+
+.header-social-list-item:first-child {
+  margin-left: 150px;
 }
+.header-social-list-item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.header-social-list-item:last-child {
+  margin-right: 92px;
+}
+
 .social-icon {
   width: 30px;
   height: 30px;
+}
+
+.social-icon-instagram {
+  width: 29px;
+  height: 29px;
+  padding: 3px;
+  border-radius: 25%;
+  background: linear-gradient(49.12deg, #ffdd55 6.62%, #ff543e 50.06%, #c837ab 93.5%);
 }
 .work-time-list {
   display: flex;
@@ -42,10 +64,35 @@
   display: flex;
   align-items: center;
 }
-.work-time-title {
+
+.work-time-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
+.work-time-title {
+  min-width: 140px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+
+  color: #ffffff;
+
+  margin-right: 27px;
+}
+
 .work-time-clock {
   width: 163px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+
+  color: #ffffff;
+
+  margin-right: 72px;
 }
 .header-tell-icon {
   width: 20px;
@@ -59,11 +106,33 @@
 .header-call-item {
   display: flex;
   align-items: center;
+  margin-right: 16px;
 }
 
 .header-contact-link {
   display: flex;
   align-items: center;
+
+  color: #ffffff;
 }
 .header-tell-icon {
+  margin-right: 14px;
+}
+
+.header-tell {
+  width: 124px;
+}
+
+.call-order {
+  width: 161px;
+  height: 45px;
+
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: transparent;
+
+  flex-grow: 1;
 }
