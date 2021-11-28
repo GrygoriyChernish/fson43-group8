@@ -20,11 +20,11 @@
   margin-bottom: 82px;
 }
 .reviews-slider {
-  display: flex;
+  // display: flex;
 }
 .review-box {
-  width: 370px;
-  height: 353px;
+  // width: 370px;
+  // height: 353px;
   padding: 28px;
   background: #ffffff;
   box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
@@ -58,4 +58,16 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 1.3em;
+}
+
+.reviwer-item {
+  display: flex;
+}
+
+.slick-prev, .slick-next {
+  background-color: #5F24A8;;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: #5F24A8;;
 }
